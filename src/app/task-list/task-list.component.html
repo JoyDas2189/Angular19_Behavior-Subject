@@ -1,0 +1,10 @@
+<div style="text-align: center">
+  <h1>Task List</h1>
+  <ul>
+    <li *ngFor="let task of tasks">
+      <span [class.completed]="task.status === 'completed'">{{ task.name }}</span>
+      <button (click)="markAsCompleted(task.id)" [disabled]="task.status === 'completed'" class="completeButton">Complete</button>
+      <button (click)="deleteTask(task.id)" class="deleteButton">Delete</button>
+    </li>
+  </ul>
+</div>

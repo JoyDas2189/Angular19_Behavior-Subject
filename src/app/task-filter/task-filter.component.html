@@ -1,0 +1,12 @@
+<div style="text-align: center;">
+  <h1>Task Filter</h1>
+  <button (click)="filterTask('all')">All</button>
+  <button (click)="filterTask('pending')" class="pendingButton">Pending</button>
+  <button (click)="filterTask('completed')" class="completeButton">Completed</button>
+  <ul>
+    <li *ngIf="filteredTasks.length === 0">No tasks found</li>
+    <li *ngFor="let task of filteredTasks">
+      <span [class.completed]="task.status === 'completed'">{{ task.name }} - {{ task.status }}</span>
+    </li>
+  </ul>
+</div>

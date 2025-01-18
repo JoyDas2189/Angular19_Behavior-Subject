@@ -1,0 +1,72 @@
+div {
+    text-align: center;
+    padding: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  h1 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 0 10px 20px;
+  }
+
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+  }
+  
+  li {
+    background-color: #ffffff;
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  span {
+    font-size: 16px;
+    color: #333;
+  }
+  
+  span.completed {
+    text-decoration: line-through;
+    color: #888;
+  }
+  .pendingButton {
+    background-color: orange;
+  }
+  .pendingButton:hover {
+    background-color: rgb(255, 72, 0);
+  }
+  .completeButton {
+    background-color: green;
+  }
+  .completeButton:hover {
+    background-color: rgb(18, 58, 18);
+  }
